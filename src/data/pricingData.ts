@@ -1,4 +1,5 @@
 export const spaceTypes = [
+  // Common spaces
   { id: 'classroom', name: 'Classroom', defaultPanos: 2, pricePerPano: 45 },
   { id: 'hall', name: 'Assembly/Sports Hall', defaultPanos: 3, pricePerPano: 50 },
   { id: 'canteen', name: 'Canteen/Dining Area', defaultPanos: 2, pricePerPano: 45 },
@@ -10,6 +11,30 @@ export const spaceTypes = [
   { id: 'garden', name: 'Garden/Nature Area', defaultPanos: 2, pricePerPano: 45 },
   { id: 'corridor', name: 'Corridor/Hallway', defaultPanos: 2, pricePerPano: 40 },
   { id: 'office', name: 'Office/Staff Room', defaultPanos: 1, pricePerPano: 45 },
+
+  // Primary school specific
+  { id: 'sensory-room', name: 'Sensory Room', defaultPanos: 1, pricePerPano: 45 },
+  { id: 'art-room', name: 'Art Room', defaultPanos: 2, pricePerPano: 45 },
+  { id: 'music-room', name: 'Music Room', defaultPanos: 1, pricePerPano: 45 },
+
+  // Secondary school specific - Science
+  { id: 'physics-lab', name: 'Physics Lab', defaultPanos: 2, pricePerPano: 45 },
+  { id: 'chemistry-lab', name: 'Chemistry Lab', defaultPanos: 2, pricePerPano: 45 },
+  { id: 'biology-lab', name: 'Biology Lab', defaultPanos: 2, pricePerPano: 45 },
+  { id: 'science-lab', name: 'Science Lab (General)', defaultPanos: 2, pricePerPano: 45 },
+
+  // Secondary school specific - Subjects
+  { id: 'stem-lab', name: 'STEM Lab', defaultPanos: 2, pricePerPano: 45 },
+  { id: 'dt-workshop', name: 'Design & Technology Workshop', defaultPanos: 2, pricePerPano: 45 },
+  { id: 'languages-lab', name: 'Languages Lab', defaultPanos: 2, pricePerPano: 45 },
+  { id: 'history-room', name: 'History Room', defaultPanos: 2, pricePerPano: 45 },
+  { id: 'geography-room', name: 'Geography Room', defaultPanos: 2, pricePerPano: 45 },
+  { id: 'art-studio', name: 'Art Studio', defaultPanos: 2, pricePerPano: 45 },
+  { id: 'drama-studio', name: 'Drama Studio', defaultPanos: 2, pricePerPano: 45 },
+  { id: 'music-studio', name: 'Music Studio', defaultPanos: 2, pricePerPano: 45 },
+  { id: '6th-form', name: '6th Form Area', defaultPanos: 2, pricePerPano: 45 },
+  { id: 'sports-facilities', name: 'Sports Facilities', defaultPanos: 3, pricePerPano: 50 },
+
   { id: 'other', name: 'Other Space', defaultPanos: 1, pricePerPano: 45 },
 ];
 

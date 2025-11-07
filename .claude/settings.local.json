@@ -4,7 +4,12 @@
       "Bash(npm run dev:*)",
       "Bash(git init:*)",
       "Bash(git add:*)",
-      "Bash(git config:*)"
+      "Bash(git config:*)",
+      "Bash(git commit -m \"$(cat <<''EOF''\nInitial commit: 360 Spaces Quotation App\n\nFeatures implemented:\n- Tiered pricing structure (£45 first pano, £35 additional)\n- Three template options (Primary, Secondary, Custom)\n- Interactive space selector with quantity controls\n- Add-ons: Drone, Aerial, Staff Headshots, Branding\n- Free included features: Principal Welcome, Navigation Map, Social Media\n- Optional features: Photo Gallery, News Integration\n- First year hosting free\n- Client form and quote sharing\n- Responsive design with Tailwind CSS and shadcn/ui\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")",
+      "Bash(git remote add:*)",
+      "Bash(git branch:*)",
+      "Bash(git push:*)",
+      "Bash(npm run build:*)"
     ],
     "deny": [],
     "ask": []

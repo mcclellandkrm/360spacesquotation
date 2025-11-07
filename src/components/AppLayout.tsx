@@ -39,6 +39,9 @@ const AppLayout: React.FC = () => {
         { id: 'hall', name: 'Assembly/Sports Hall', quantity: 1, panosPerSpace: 3, pricePerPano: 50 },
         { id: 'it-suite', name: 'IT Suite', quantity: 1, panosPerSpace: 2, pricePerPano: 45 },
         { id: 'library', name: 'Library', quantity: 1, panosPerSpace: 2, pricePerPano: 45 },
+        { id: 'sensory-room', name: 'Sensory Room', quantity: 1, panosPerSpace: 1, pricePerPano: 45 },
+        { id: 'art-room', name: 'Art Room', quantity: 1, panosPerSpace: 2, pricePerPano: 45 },
+        { id: 'music-room', name: 'Music Room', quantity: 1, panosPerSpace: 1, pricePerPano: 45 },
         { id: 'reception', name: 'Reception/Main Entrance', quantity: 1, panosPerSpace: 2, pricePerPano: 45 },
         { id: 'cloakroom', name: 'Cloakroom Area', quantity: 1, panosPerSpace: 1, pricePerPano: 40 },
         { id: 'playground', name: 'Playground/Outdoor Area', quantity: 1, panosPerSpace: 3, pricePerPano: 50 },
@@ -50,14 +53,23 @@ const AppLayout: React.FC = () => {
       setFeatures(features.map(f => f.included ? { ...f, selected: true } : f));
     } else if (templateId === 'secondary-school') {
       setSpaces([
-        { id: 'classroom', name: 'Classroom', quantity: 10, panosPerSpace: 2, pricePerPano: 45 },
+        { id: 'classroom', name: 'Classroom', quantity: 8, panosPerSpace: 2, pricePerPano: 45 },
         { id: 'hall', name: 'Assembly/Sports Hall', quantity: 2, panosPerSpace: 3, pricePerPano: 50 },
         { id: 'it-suite', name: 'IT Suite', quantity: 2, panosPerSpace: 2, pricePerPano: 45 },
         { id: 'library', name: 'Library', quantity: 1, panosPerSpace: 2, pricePerPano: 45 },
         { id: 'canteen', name: 'Canteen/Dining Area', quantity: 1, panosPerSpace: 2, pricePerPano: 45 },
+        { id: 'physics-lab', name: 'Physics Lab', quantity: 1, panosPerSpace: 2, pricePerPano: 45 },
+        { id: 'chemistry-lab', name: 'Chemistry Lab', quantity: 1, panosPerSpace: 2, pricePerPano: 45 },
+        { id: 'biology-lab', name: 'Biology Lab', quantity: 1, panosPerSpace: 2, pricePerPano: 45 },
+        { id: 'stem-lab', name: 'STEM Lab', quantity: 1, panosPerSpace: 2, pricePerPano: 45 },
+        { id: 'dt-workshop', name: 'Design & Technology Workshop', quantity: 1, panosPerSpace: 2, pricePerPano: 45 },
+        { id: 'languages-lab', name: 'Languages Lab', quantity: 1, panosPerSpace: 2, pricePerPano: 45 },
+        { id: 'art-studio', name: 'Art Studio', quantity: 1, panosPerSpace: 2, pricePerPano: 45 },
+        { id: 'music-studio', name: 'Music Studio', quantity: 1, panosPerSpace: 2, pricePerPano: 45 },
+        { id: '6th-form', name: '6th Form Area', quantity: 1, panosPerSpace: 2, pricePerPano: 45 },
+        { id: 'sports-facilities', name: 'Sports Facilities', quantity: 1, panosPerSpace: 3, pricePerPano: 50 },
         { id: 'reception', name: 'Reception/Main Entrance', quantity: 1, panosPerSpace: 2, pricePerPano: 45 },
-        { id: 'office', name: 'Office/Staff Room', quantity: 1, panosPerSpace: 1, pricePerPano: 45 },
-        { id: 'playground', name: 'Playground/Outdoor Area', quantity: 2, panosPerSpace: 3, pricePerPano: 50 }
+        { id: 'office', name: 'Office/Staff Room', quantity: 1, panosPerSpace: 1, pricePerPano: 45 }
       ]);
       setAddOns(addOns.map(a =>
         a.id === 'drone' || a.id === 'aerial' ? { ...a, selected: true } : a
